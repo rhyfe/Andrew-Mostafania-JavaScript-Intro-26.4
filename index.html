@@ -5,30 +5,64 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="HTML">
+        <link href="css/index.css" rel="stylesheet">
     </head>
 
     <body>
-        <h1>Andrew Mostafania</h1>
+        <nav>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#About">About</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Connect">Connect</a>
+        </nav>
+        <section id="Skills">
+            <h2>Skills</h2>
+            <ul></ul>
+        </section>
+
+        <section id="Projects">
+            <h2>Projects</h2>
+            <ul></ul>
+        </section>
+        <h1 class="myname">Andrew Mostafania</h1>
         
         <section id="About">
-            <h2>About</h2>
+            <h2 class="about-header">About</h2>
             <p>I have self taught python for 1 year, learning concepts from the foundations to OOP. Am currently learning full stack web development in javascript. Looking forward to a career creating applications that are useful to people and people can enjoy.</p>
         </section>
         
         <section id="Experience">
-            <h2>Experience</h2>
-        <ul>
-            <li>Python</li>
-            <li>Django</li>
-            <li>Docker</li>
-            <li>Javascript</li>
-        </ul>
+            <h2 class="experience-header">Experience</h2>
+            <div class="experience-box">
+                <div class="experience-category">
+                    <h4 class="experience-name">Name</h4>
+                    <ul class="experience-list">
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Docker</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="experience-category">
+                    <h4 class="experience-desc-head">Description</h4>
+                    <ul class="experience-descriptions-list">
+                        <li>Python fundamentals to OOP</li>
+                        <li>Backend engine/ORM</li>
+                        <li>Image/container setup</li>
+                        <li>Full stack web dev experience</li>
+                    </ul>
+                </div>
+            </div>
+            
         </section>
         
         <section id="Connect">
-            <h2>Connect</h2>
-            <a href="https://github.com/rhyfe" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/andrew-m-881168259" target="_blank">Linkedin</a>
+            <h2 class="connect-header">Connect</h2>
+            <div class="connect-links-div">
+                <div class="link-div"><a href="https://github.com/rhyfe" target="_blank" class="connect-link">Github</a></div>
+                <div class="link-div"><a href="https://www.linkedin.com/in/andrew-m-881168259" target="_blank" class="connect-link">Linkedin</a></div>
+            </div>
         </section>
         
     </body>
