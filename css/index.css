@@ -118,3 +118,18 @@ nav {
     border: 2px solid blanchedalmond;
     background-color: rgb(74, 74, 75);
 }
+
+#Skills {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.skills-list {
+    display: flex;
+
+}
+
+footer {
+    text-align: center;
+}
