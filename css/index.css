@@ -117,6 +117,10 @@ nav {
     top: 10px;
     border: 2px solid blanchedalmond;
     background-color: rgb(74, 74, 75);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
 }
 
 #Skills {
@@ -132,4 +136,44 @@ nav {
 
 footer {
     text-align: center;
+}
+
+.aligned-form {
+    display: grid;
+    max-width: max-content;
+}
+
+button {
+    background: rgb(110, 253, 110);
+    padding: 10px 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#messages li {
+    
+    background-color: #364039;
+    border: 0;
+    list-style: none;
+    
+}
+
+#messages button {
+    background-color: red;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 3px;
+    border: 1px grey solid;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    
+}
+
+#messages li a {
+    color: lightblue;
+}
+
+#messages li span {
+    color: white;
 }
