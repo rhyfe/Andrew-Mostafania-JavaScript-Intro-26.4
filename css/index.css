@@ -177,3 +177,14 @@ button {
 #messages li span {
     color: white;
 }
+
+#Projects Li {
+    background-color: #364039;
+    border: 0;
+    color: blanchedalmond;
+    list-style: none;
+}
+
+#Projects ul {
+    display: flex;
+}
