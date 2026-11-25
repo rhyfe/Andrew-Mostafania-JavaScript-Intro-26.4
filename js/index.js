@@ -52,3 +52,33 @@ messageForm.addEventListener('submit', (e) => {
 
     messageForm.reset();
 })
+
+
+// Fetch API to fetch repository data from my github
+
+fetch('https://api.github.com/users/rhyfe/repos')
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        let repositories = data;
+        console.log(repositories);
+        if (repositories.length === 0) {
+            throw new Error('Repository list is empty');
+        }
+
+        // display repositories in list below
+
+        const projectSection = document.querySelector('#Projects');
+        const projectList = projectSection.querySelector('ul');
+        for (let i = 0; i< repositories.length; i++) {
+            let project = document.createElement('li');
+            project.innerHTML = repositories[i].name;
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        console.error(error);
+    });
+
+
